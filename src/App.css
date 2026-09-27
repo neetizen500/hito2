@@ -1,0 +1,27 @@
+.pizza-thumb {
+  height: 180px;
+  object-fit: cover;
+}
+
+.header-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 320px;
+  padding: 2rem;
+  position: relative;
+}
+
+.header-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: inherit;
+}
+
+.header-hero h1,
+.header-hero p {
+  position: relative;
+  z-index: 1;
+}
